@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Botx Automations</title>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body id="vanta-canvas">
+    <div class="container-fluid">
+
+        <div class="modal fade" id="verificationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div align="center" id="innerborder" style="padding: 2em">
+                            <h3 id="output_message">
+
+                            </h3>
+                            <button style="display: none;" id="downloadbtn" class="btn btn-warning"
+                                type="button">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter-->
+
+        <div id="newsletterModal" class="modal fade">
+            <div class="modal-dialog modal-newsletter">
+                <div class="modal-content">
+                    <form id="newsletter" action="">
+                        <div class="modal-header">
+                            <div class="icon-box">
+                                <i class="fa fa-envelope-open-o"></i>
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal"
+                                aria-hidden="true"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <h4>Subscribe to our newsletter</h4>
+                            <p>Join our subscribers list to get the latest news, updates and special offers delivered
+                                directly in your inbox.</p>
+                            <div class="input-group">
+                                <input type="email" name="_replyto" class="form-control" placeholder="Enter your email"
+                                    required>
+                                <span class="input-group-btn">
+                                    <input type="submit" class="btn btn-primary" value="Subscribe">
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- ...................................... top-navbar ......................................... -->
+
+        <div class="row row-responsive align-items-start">
+            <div class="col col-md-4 col-sm-4 col-xs-4">
+                <a href="index.html"><img src="assets/images/logo.png" alt="Botx_Logo" class="img-responsive"
+                        width="150px" height="150px" /></a>
+            </div>
+            <div class="col col-md-8 col-sm-8 col-xs-8 vector">
+                <label for="check">
+                    <input type="checkbox" id="check" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="menu_text">
+                    <a href="#">Menu</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ................................................................................................. -->
+
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <nav class="sidebar notActive">
+                <!-- close sidebar menu -->
+                <div class="dismiss">
+                    <a href="#">Close <img class="closeImg" src="assets/images/Vector.png"></a>
+                </div>
+                <ul class="list-unstyled menu-elements">
+                    <li class="active">
+                        <a class="" href="index.html"> Home</a>
+                    </li>
+                    <li>
+                        <a class="" href="about.html"> About</a>
+                    </li>
+                    <li>
+                        <a class="" href="hiring.html"> Join us</a>
+                    </li>
+                    <li>
+                        <a class="" href="say.html"> Contact us</a>
+                    </li>
+                </ul>
+                <div class="contacts">
+                    <a class="" href="mailto:hello@botx.co.in"><img class="" src="assets/images/mail.png"> &nbsp
+                        hello@botx.co.in</a> <br>
+                    <a class="" href="tel:+919048058428"><img class="" src="assets/images/phone24.png"> &nbsp +91 90480
+                        58428</a>
+                    <br>
+                    <a class="" href="#"><img class="" src="assets/images/mailbox.png"> &nbsp Ernakulam, Kerala</a>
+                </div>
+
+                <div class="certificateverify">
+                    <a class="" href="verification.html">Verify Certificate</a>
+                </div>
+
+                <div class="newsletter">
+                    <a href="#" data-toggle="modal" data-target="#newsletterModal">Subscribe to Newsletter</a>
+                </div>
+
+                <div class="socialMedia">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+
+                <div class="privacyTerms">
+                    <a href="#">Privacy Policy</a>
+                    <p> &nbsp &nbsp|&nbsp &nbsp</p>
+                    <a href="#">Terms of Service</a>
+                </div>
+
+                <div class="copyright">
+                    <p>Copyright © 2021 | All Rights Reserved </p>
+                    <p>BOTX AUTOMATIONS PRIVATE LIMITED</p>
+                </div>
+            </nav>
+        </div>
+        <!-- .......................................................................... -->
+
+        <div class="container-fluid cert_position">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1>Verify <span class="cert_span"> Certificate</span></h1>
+                    <p> Verify the Credibility of all the certificates<br>
+                        Issued from Botx Automations.
+                    </p>
+                </div>
+            </div>
+            <form class="form-horizontal" id="certform" action="">
+                <div class="row form">
+                    <div class="col col-md-3 cert_form">
+                        <div class="form-group">
+                            <input id="inputcertnum" type="text" placeholder="ENTER CERTIFICATE NUMBER IN CAPITAL"
+                                name="certnum" class="form-control name" maxlength="13">
+                        </div>
+                    </div>
+                </div>
+                <button id="verifybutton" type="button" class="btn btn-verify" data-toggle="modal"
+                    data-target="#verificationModal">Verify</button>
+            </form>
+        </div>
+    </div>
+    <!--Firebase Library-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="assets/js/vanta_globe.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "#vanta-canvas",
+            mouseControls: false,
+            touchControls: false,
+            gyroControls: false,
+            minHeight: 100.00,
+            minWidth: 100.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0xFF0000,
+            backgroundColor: 0x000000,
+            size: 1.2,
+        })
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
